@@ -10,6 +10,16 @@ body {
 background-color: #17202a
 }
 </style>
+
+.custom-popover {
+  --bs-popover-max-width: 200px;
+  --bs-popover-border-color: var(--bd-violet-bg);
+  --bs-popover-header-bg: var(--bd-violet-bg);
+  --bs-popover-header-color: var(--bs-white);
+  --bs-popover-body-padding-x: 1rem;
+  --bs-popover-body-padding-y: .5rem;
+}
+    
   </head>
   <body>
     <font color="#FF5733">
@@ -17,8 +27,14 @@ background-color: #17202a
       </font>
     
     <div align="center">
-      <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="Campaña para capitalizacion Crypto<br/>
-        Para PYMES ECUADOR.">COMO FUNCIONA</button>
+<button type="button" class="btn btn-secondary"
+        data-bs-toggle="popover" data-bs-placement="right"
+        data-bs-custom-class="custom-popover"
+        data-bs-title="DE LA SIGUIENTE MANERA"
+        data-bs-content="This popover is themed via CSS variables.">
+  COMO FUNCIONA
+</button>
+      
     </div>
     
     <div align="center">
